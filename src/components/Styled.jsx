@@ -25,6 +25,7 @@ transition:all 0.5s ease-in-out;
     outline:none;
 }
 `
+
 export const NavWrapper = styled.nav`
 background:var(--mainDark);
 .nav-link{

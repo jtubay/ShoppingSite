@@ -12,7 +12,7 @@
 font-family: 'Oswald', sans-serif;
 font-family: 'Roboto Mono', monospace; */
 body{
-  font-family: 'Roboto Mono', monospace!important;
+  font-family: 'Dancing Script', cursive!important;
   background: var(--mainWhite)!important;
   color: var(--mainDark)!important;
 }

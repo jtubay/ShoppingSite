@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { Component } from 'react';
+import Product from './Product.jsx';
+import Title from './Title.jsx';
+import { ProductConsumer } from '../context'
 
-export default function ProductList() {
-    return (
-        <div>
-            <h1>hello products</h1>
-        </div>
-    )
+export default class ProductList extends Component {
+    render(){
+        return (
+            <React.Fragment>
+                <div className="py-5">
+                    <div className="container">
+                        <Title name="our" title="products"/>
+                        <div className="row">
+                            <ProductConsumer>
+                                {(value) => {
+                                    return value.products.map(product => {
+                                        return <Product key={product.id} product={product}/>
+                                    })
+                                }}
+                            </ProductConsumer>
+                        </div>
+                    </div>
+                </div>
+            </React.Fragment>
+        )
+    }
 }

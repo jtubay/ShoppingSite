@@ -45,7 +45,7 @@ export default function Footer() {
                 {/* footer copy */}
                 <div className="footer-bottom">
                     <p className="text-xs-center">
-                        &copy;{new Date().getFullYear()} Nurhan - All Rights Reserved
+                        &copy;{new Date().getFullYear()} Nurhan Accessories - All Rights Reserved
                     </p>
                 </div>
             </div>

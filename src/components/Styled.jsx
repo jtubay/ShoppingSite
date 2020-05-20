@@ -88,3 +88,42 @@ export const ProductWrapper = styled.div`
     cursor: pointer;
 }
 `
+export const FooterContainer = styled.footer`
+
+    .footer-middle{
+        margin-top: 5rem;
+        background: var(--mainDark);
+        padding-top: 2rem;
+        color: var(--mainWhite);
+        // position: absolute;
+        // bottom:-100;
+        // width:100%;
+    }
+    .footer-bottom{
+        padding-top: 3rem;
+        padding-bottom:0.5rem;
+    }
+    .company{
+        color:var(--mainGold);
+    }
+    .imgLogo{
+        border-radius:50%;
+        margin-left:3rem;
+        height:100px;
+        width:100px;
+        
+    }
+    .email{
+        text-decoration: none;
+        color: var(--mainWhite);
+    }
+    .contactMe{
+        color:var(--mainGold);
+    }
+    .social{
+        margin:1rem;
+        
+        
+    }
+  
+`;

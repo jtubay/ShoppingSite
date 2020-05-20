@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from '../logo.svg';
 import { ButtonContainer, NavWrapper } from './Styled.jsx'
+import Footer from './Footer.jsx'
 
 export default class NavBar extends Component{
     render(){
@@ -17,7 +18,7 @@ export default class NavBar extends Component{
                         className="nav-link">Products</Link>
                     </li>
                     <li className="nav-item ">
-                        <Link to='/'
+                        <Link to='/footer'
                         className="nav-link">||    contact me</Link>
                     </li>
                 </ul>

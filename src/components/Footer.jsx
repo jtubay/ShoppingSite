@@ -1,12 +1,13 @@
 import React from 'react'
-import { FooterContainer } from './Styled.jsx'
+import { FooterContainer} from './Styled.jsx'
 import Logo from './image.jpg'
 
 
 export default function Footer() {
     return (
+
         <FooterContainer  className="main-footer">
-            <div className="footer-middle">
+        <div className="footer-middle">
             <div className="container">
                 <div className="row">
                     <div className="col-md-4 col-sm-6 mb-3" >
@@ -63,8 +64,9 @@ export default function Footer() {
        
                 </div>
             </div>
-            </div>
+        </div>
         </FooterContainer >
+
     )
 }
 

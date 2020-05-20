@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Product from './Product.jsx';
 import Title from './Title.jsx';
 import { ProductConsumer } from '../context'
+import { MainDiv } from './Styled'
 
 export default class ProductList extends Component {
     render(){
         return (
             <React.Fragment>
-                <div className="py-5">
+                <MainDiv>
+                <div className="py-5 mainDiv">
                     <div className="container">
                         <Title name="our" title="products"/>
                         <div className="row">
@@ -21,6 +23,7 @@ export default class ProductList extends Component {
                         </div>
                     </div>
                 </div>
+                </MainDiv>
             </React.Fragment>
         )
     }

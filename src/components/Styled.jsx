@@ -39,6 +39,7 @@ export const ProductWrapper = styled.div`
     border-color: transparent;
     transition: all 1s linear;
 }
+
 .card-footer{
     background: transparent;
     border-top: tansparent;
@@ -89,15 +90,16 @@ export const ProductWrapper = styled.div`
 }
 `
 export const FooterContainer = styled.footer`
+   
 
     .footer-middle{
         margin-top: 5rem;
         background: var(--mainDark);
         padding-top: 2rem;
         color: var(--mainWhite);
-        // position: absolute;
-        // bottom:-100;
-        // width:100%;
+        position: absolute;
+        bottom:-100;
+        width:100%;
     }
     .footer-bottom{
         padding-top: 3rem;
@@ -127,3 +129,22 @@ export const FooterContainer = styled.footer`
     }
   
 `;
+export const ModalContainer = styled.div `
+position:fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0,0,0,0.3);
+display: flex;
+align-items:center;
+justify-content:center;
+#modal{
+    background: var(--mainWhite)
+}
+`
+export const MainDiv = styled.div`
+.mainDiv{
+    position: relative;
+}
+`

@@ -29,17 +29,17 @@ export default function Footer() {
                         
                        
                     <div className="mb-2 mt-5">
-                         <i class="fa fa-map-marker"><span>  123 Main St</span></i>
+                         <i className="fa fa-map-marker"><span>  123 Main St</span></i>
   
                      </div>
      
                      <div className="mb-2">
-                         <i class="fa fa-phone"><span>  +1.555.555.5555</span></i>
+                         <i className="fa fa-phone"><span>  +1.555.555.5555</span></i>
                          
                      </div>
      
                      <div>
-                         <i class="fa fa-envelope"> <a href="mailto:support@company.com" className="email">  support@company.com</a></i>
+                         <i className="fa fa-envelope"> <a href="mailto:support@company.com" className="email">  support@company.com</a></i>
 
                      </div>
 
@@ -48,9 +48,9 @@ export default function Footer() {
                     <div className="col-md-4 col-sm-6 mb-3 text-right">
                         <h2 className="contactMe">Contact Information</h2>
                         <p>Lorem</p>
-                        <i class="fab fa-facebook-square social"></i>
-                     <i class="fab fa-instagram social"></i>
-                     <i class="fab fa-twitter-square social"></i>
+                        <i className="fab fa-facebook-square social"></i>
+                     <i className="fab fa-instagram social"></i>
+                     <i className="fab fa-twitter-square social"></i>
                     </div>
 
                 </div>

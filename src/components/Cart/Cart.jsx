@@ -8,8 +8,12 @@ import CartTotals from './CartTotals'
 
 
 
+
+
 export default class Cart extends Component {
     render() {
+       
+       
         return (
             <section>
 
@@ -23,6 +27,7 @@ export default class Cart extends Component {
                                     <CartColumns/>
                                     <CartList value={value}/>
                                     <CartTotals value={value} history={this.props.history}/>
+                                    
                                 </React.Fragment>
                             );
                         }

@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import { storeProducts, detailProduct } from './data';
+import StripeCheckout from 'react-stripe-checkout'
+import { toast } from "react-toastify";
+import axios from 'axios';
+toast.configure()
+
 
 const ProductContext = React.createContext();
 
@@ -133,10 +138,8 @@ class ProductProvider  extends Component{
     }
     clearCart = () => {
         this.setState(() => {
-            return {
-                cart:[]
-            }
-        }, () => {
+            return { cart:[] };
+        }, ()=>{
             this.setProducts();
             this.addTotals();
         })
@@ -156,6 +159,23 @@ class ProductProvider  extends Component{
             }
         })
     }
+   
+    handleToken = async (token, addresses) => {
+        const cartTotal = this.state.cartTotal
+        const response = await axios.post(
+            'http://localhost:8080/checkout',
+            {token, cartTotal}
+        );
+        const { status } = response.data;
+        console.log("Response:", response.data);
+        if (status === "success") {
+          toast("Success! Check email for details", { type: "success" });
+          
+        } else {
+          toast("Something went wrong", { type: "error" });
+
+        }
+    }
     render() {
         return (
             <ProductContext.Provider value={{
@@ -167,7 +187,8 @@ class ProductProvider  extends Component{
                 increment:this.increment,
                 decrement:this.decrement,
                 removeItem:this.removeItem,
-                clearCart:this.clearCart
+                clearCart:this.clearCart,
+                handleToken: this.handleToken
             }}>
                 {this.props.children}
             </ProductContext.Provider>

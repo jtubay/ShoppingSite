@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import PayPalButton from './PaypalButton'
+import PayPalButton from './PaypalButton';
+import StripeCheckout from 'react-stripe-checkout'
+
 
 export default function CartTotals({value, history}) {
-    const {cartSubTotal, cartShip, cartTotal, clearCart} = value;
+    const {cartSubTotal, cartShip, cartTotal, clearCart, handleToken} = value;
     return (
         <React.Fragment>
            <div className="container">
@@ -31,8 +33,17 @@ export default function CartTotals({value, history}) {
                                 total :  
                             </span><strong>$ {cartTotal}</strong>
                         </h5>
-                        <PayPalButton total={cartTotal} clearCart={clearCart}
-                        history={history}/>
+                        {/* <PayPalButton total={cartTotal} clearCart={clearCart}
+                        history={history}/> */}
+                        <StripeCheckout 
+                                        stripeKey= {process.env.REACT_APP_STRIPE_KEY}
+                                        token={handleToken}
+                                        billingAddress
+                                        shippingAddress
+                                        amount={cartTotal * 100}
+                                        
+                                    />
+                        
                     </div>
                 </div>
             </div> 

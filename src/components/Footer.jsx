@@ -28,12 +28,12 @@ export default function Footer() {
                         
                         
                        
-                    <div className="mb-1 mt-5">
+                    <div className="mb-1 mt-5 mb-3">
                          <i className="fa fa-map-marker"><span>  123 Main St</span></i>
   
                      </div>
      
-                     <div className="mb-1">
+                     <div className="mb-3">
                          <i className="fa fa-phone"><span>  +1.555.555.5555</span></i>
                          
                      </div>

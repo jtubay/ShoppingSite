@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { storeProducts, detailProduct } from './data';
 import StripeCheckout from 'react-stripe-checkout'
 import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import axios from 'axios';
 toast.configure()
 
@@ -162,14 +163,18 @@ class ProductProvider  extends Component{
    
     handleToken = async (token, addresses) => {
         const cartTotal = this.state.cartTotal
+        const cart = this.state.cart;
         const response = await axios.post(
             'http://localhost:8080/checkout',
-            {token, cartTotal}
+            {token, cartTotal, cart}
         );
         const { status } = response.data;
         console.log("Response:", response.data);
+        
+        
         if (status === "success") {
           toast("Success! Check email for details", { type: "success" });
+          this.clearCart()
           
         } else {
           toast("Something went wrong", { type: "error" });

@@ -71,7 +71,7 @@ export const ProductWrapper = styled.div`
     bottom: 0;
     right: 0;
     padding: 0.2rem 0.4rem;
-    background:var(--lightBlue);
+    background:var(--mainGold);
     border:none;
     color:var(--mainWhite);
     font-size:1.4rem;
@@ -85,7 +85,7 @@ export const ProductWrapper = styled.div`
     transform: translate(0,0);
 }
 .cart-btn:hover{
-    color:var(--mainBlue);
+    color:var(--mainDark);
     cursor: pointer;
 }
 `
@@ -109,10 +109,11 @@ export const FooterContainer = styled.footer`
         color:var(--mainGold);
     }
     .imgLogo{
+        // border:.1rem solid var(--mainGold);
         border-radius:50%;
         margin-left:3rem;
-        height:100px;
-        width:100px;
+        height:120px;
+        width:120px;
         
     }
     .email{

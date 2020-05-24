@@ -17,10 +17,7 @@ export default class NavBar extends Component{
                         <Link to='/'
                         className="nav-link">Products</Link>
                     </li>
-                    <li className="nav-item ">
-                        <Link to='/footer'
-                        className="nav-link">||    contact me</Link>
-                    </li>
+                  
                 </ul>
               
  

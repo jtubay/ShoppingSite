@@ -1,6 +1,6 @@
 import React from 'react'
 import { FooterContainer} from './Styled.jsx'
-import Logo from './image.jpg'
+import Logo from './nurhan.PNG'
 
 
 export default function Footer() {

@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import Product from './Product.jsx';
 import Title from './Title.jsx';
 import { ProductConsumer } from '../context'
-import { MainDiv } from './Styled'
+import Footer from '../components/Footer'
+
+
 
 export default class ProductList extends Component {
     render(){
         return (
             <React.Fragment>
-                <MainDiv>
+                
                 <div className="py-5 mainDiv">
                     <div className="container">
                         <Title name="our" title="products"/>
@@ -23,7 +25,7 @@ export default class ProductList extends Component {
                         </div>
                     </div>
                 </div>
-                </MainDiv>
+                <Footer/>
             </React.Fragment>
         )
     }

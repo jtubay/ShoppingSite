@@ -15,9 +15,18 @@
 font-family: 'Oswald', sans-serif;
 font-family: 'Roboto Mono', monospace; */
 body{
-  font-family: 'Dancing Script', cursive!important;
+  font-family: 'Oswald', sans-serif!important;
   background: var(--mainWhite)!important;
   color: var(--mainDark)!important;
+}
+.navbar{
+  font-family: 'Dancing Script', cursive!important;
+}
+.company {
+  font-family: 'Dancing Script', cursive!important;
+}
+.contactMe {
+  font-family: 'Dancing Script', cursive!important;
 }
 .text-title{
   font-family: 'Dancing Script', cursive;

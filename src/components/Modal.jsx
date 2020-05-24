@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import styled from 'styled-components';
+
 import { ProductConsumer } from '../context';
-import { ButtonContainer } from './Styled';
+
 import { Link } from 'react-router-dom'
-import { ModalContainer } from './Styled'
+import { ModalContainer, ButtonContainer  } from './Styled'
 
 export default class Modal extends Component {
     render(){
@@ -47,4 +47,3 @@ export default class Modal extends Component {
         )
     }
 }
-

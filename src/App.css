@@ -33,6 +33,9 @@ body{
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
+.compFoot{
+  color:var(--mainGold)
+}
 .btn-black{
   background: transparent;
   text-transform: capitalize;

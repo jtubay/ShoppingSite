@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer-middle">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-4 col-sm-6 mb-3" >
+                    <div className="col-md-4 col-sm-6 mb-1" >
                     <h2 className="company mb-3">Nurhan Accesories</h2>
                         <img src={Logo} className="imgLogo" alt=""/>
                         
@@ -24,16 +24,16 @@ export default function Footer() {
                             <li>lorem upsim</li>  
                         </ul>
                     </div> */}
-                    <div className="col-md-4 col-sm-6 mb-3">
+                    <div className="col-md-4 col-sm-6 mb-1">
                         
                         
                        
-                    <div className="mb-2 mt-5">
+                    <div className="mb-1 mt-5">
                          <i className="fa fa-map-marker"><span>  123 Main St</span></i>
   
                      </div>
      
-                     <div className="mb-2">
+                     <div className="mb-1">
                          <i className="fa fa-phone"><span>  +1.555.555.5555</span></i>
                          
                      </div>
@@ -45,20 +45,20 @@ export default function Footer() {
 
 
                     </div>
-                    <div className="col-md-4 col-sm-6 mb-3 text-right">
+                    <div className="col-md-4 col-sm-6 mb-1 text-right">
                         <h2 className="contactMe">Contact Information</h2>
-                        <p>Lorem</p>
-                        <i className="fab fa-facebook-square social"></i>
-                     <i className="fab fa-instagram social"></i>
-                     <i className="fab fa-twitter-square social"></i>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, illum vero explicabo atque optio libero, consequuntur cupiditate, voluptate iure reprehenderit molestias dicta hic!</p>
+                        <i className="fab fa-2x fa-facebook-square social"></i>
+                     <i className="fab fa-2x fa-instagram social"></i>
+                     <i className="fab fa-2x fa-twitter-square social"></i>
                     </div>
 
                 </div>
                 {/* footer copy */}
                 <div className="footer-bottom">
  
-                            <p className="text-xs-center">
-                                &copy;{new Date().getFullYear()} Nurhan Accessories - All Rights Reserved
+                            <p className="text-xs-center text-center">
+                                &copy;{new Date().getFullYear()} <span className="compFoot">Nurhan Accessories</span> - All Rights Reserved
                             </p>
                         
        

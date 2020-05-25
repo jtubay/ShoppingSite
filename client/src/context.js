@@ -165,7 +165,7 @@ class ProductProvider  extends Component{
         const cartTotal = this.state.cartTotal
         const cart = this.state.cart;
         const response = await axios.post(
-            'https://secret-plains-79471.herokuapp.com/checkout',
+            'http://localhost:8080/checkout',
             {token, cartTotal, cart}
         );
         const { status } = response.data;
